@@ -1,10 +1,4 @@
-FROM python:3.8
+FROM manimcommunity/manim:0.18.0
 
-WORKDIR /usr/animate/
-COPY . . 
+RUN pip3 install antlr4-python3-runtime && pip3 install antlr4-tools
 
-EXPOSE 5000
-
-WORKDIR ./src
-
-CMD [ 'python3', 'test.py' ]
