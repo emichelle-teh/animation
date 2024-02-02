@@ -2,7 +2,11 @@
 for cpsc 410 trial
 
 # To run:
-on terminal, run 
+Install the ```manim``` library:
 ```
-python3 -m manim <file name/location> <Class name>
+pip3 install manim
+```
+On terminal, run 
+```
+python3 -m manim -pql <file name/location> <Class name>
 ```
